@@ -30,7 +30,7 @@ router.post('/upload', [authMiddleware, upload.single('screenshot')], async (req
   if (!req.file) {
     return res.status(400).json({ msg: 'No file uploaded.' });
   }
-
+ 
   try {
     const user = await Student.findById(req.user.id);
     if (user.isVerified) {

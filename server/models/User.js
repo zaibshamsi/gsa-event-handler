@@ -1,6 +1,4 @@
 const mongoose = require('mongoose')
-const { unique } = require('next/dist/build/utils')
-const { getDisplayName } = require('next/dist/shared/lib/utils')
 
 const StudentSchema =new mongoose.Schema({
     displayName: {
