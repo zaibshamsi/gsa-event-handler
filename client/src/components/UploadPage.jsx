@@ -28,7 +28,7 @@ const UploadPage = () => {
 
         try {
             const token = localStorage.getItem('token');
-            const res = await axios.post('http://localhost:5000/api/verify/upload', formData, {
+            const res = await axios.post('https://gsa-event-handler-z998.onrender.com/api/verify/upload', formData, {
                 headers: {
                     'Content-Type': 'multipart/form-data',
                     'x-auth-token': token,
